@@ -1,0 +1,15 @@
+{
+  "name": "mystore-front-web-dev",
+  "version": "1.0.0",
+  "description": "MyStore PC Web front",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/yoyotie/mystore-front-web-dev.git"
+  },
+  "author": "yoyotie",
+  "license": "ISC"
+}
