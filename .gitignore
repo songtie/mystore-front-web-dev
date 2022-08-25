@@ -7,3 +7,13 @@
 
 # Local History for Visual Studio Code
 .history/
+
+#nodejs npm module
+/node_modules/
+
+#目标文件夹
+/dist/
+
+#Mac
+.DS_Store
+
