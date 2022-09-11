@@ -12,6 +12,7 @@ const config = {
     output: {
         filename: 'js/[name].js',
         path: path.resolve(__dirname, 'dist'),
+        assetModuleFilename : 'resources/[name][ext][query]'
     },
     module: {
         rules: [
@@ -19,6 +20,19 @@ const config = {
                 test: /\.css$/i,
                 use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
+            {
+                test: /\.htm$/i,
+                use: {
+                    loader  : 'html-loader',
+                    options : {
+                        esModule : false
+                    } 
+                },
+            },
+            {
+                test : /\.(woff|woff2|eot|ttf|otf)$/i,
+                type : 'asset/resource',
+            }
         ],
     },
     plugins: [
@@ -44,6 +58,14 @@ const config = {
                     minSize : 0
                 }
             }
+        }
+    },
+    resolve : {
+        alias : {
+            node_modules : path.resolve(__dirname, '/node_modules'),
+            page         : path.resolve(__dirname, '/src/page'),
+            utils        : path.resolve(__dirname, '/src/utils'),
+            view         : path.resolve(__dirname, '/src/view'),
         }
     },
     devServer: {
