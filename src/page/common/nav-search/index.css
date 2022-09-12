@@ -1,0 +1,28 @@
+.nav-search .logo{
+    position: absolute;
+    left: 60px;
+    top: 34px;
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    color: #215496;
+}
+.nav-search .search-content{
+    padding: 40px 0 30px 250px;
+}
+
+.nav-search .search-content .search-input{
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    border: 2px solid #215496;
+    outline: none;
+}
+.nav-search .search-content .search-button{
+    position: absolute;
+    height: 44px;
+    width: 100px;
+}
+

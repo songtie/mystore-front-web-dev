@@ -21,7 +21,7 @@ const config = {
                 use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
             {
-                test: /\.htm$/i,
+                test: /\.(htm|string)$/i,
                 use: {
                     loader  : 'html-loader',
                     options : {
@@ -66,6 +66,7 @@ const config = {
             page         : path.resolve(__dirname, '/src/page'),
             utils        : path.resolve(__dirname, '/src/utils'),
             view         : path.resolve(__dirname, '/src/view'),
+            service      : path.resolve(__dirname, '/src/service'),
         }
     },
     devServer: {

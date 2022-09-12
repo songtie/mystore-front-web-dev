@@ -25,6 +25,7 @@
     "webpack-dev-server": "^4.10.0"
   },
   "dependencies": {
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "hogan.js": "^3.0.2"
   }
 }

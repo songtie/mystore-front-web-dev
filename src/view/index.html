@@ -5,13 +5,18 @@
     <title>MyStore商城</title>
 </head>
 <body>
-    <%= require('./common/nav-top-simple.htm') %>
-    <h1> Index.......</h1>
-    <a href="#" class="link">abc</a>
-    <a href="" class="btn">登录</a>
-    <a href="" class="btn btn-mini">登录</a>
-    <i class="fa fa-user"></i>
-    <i class="fa fa-shopping-cart"></i>
+    <!-- <%= require('./common/nav-top-simple.htm') %> -->
+    <%= require('./common/nav-top.htm') %>
+    <%= require('./common/nav-search.htm') %>
+    
+    <div class="page-wrap w">
+        <%= require('./common/nav-side.htm') %>
+        <div class="content with-side">
+            test
+            
+        </div>
+    </div>
+    
     <%= require('./common/common-footer.htm') %>
 </body>
 </html>
