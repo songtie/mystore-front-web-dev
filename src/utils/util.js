@@ -8,10 +8,14 @@ var _common_util = {
     request : function(param){
         var _this = this;
         $.ajax({
-            type     : param.method || 'GET',
-            url      : param.url || '',
-            dataType : param.type || 'json',
-            data     : param.data || '',
+            type        : param.method || 'GET',
+            url         : param.url || '',
+            contentType : param.contentType || 'application/x-www-form-urlencoded',
+            dataType    : param.type || 'json',
+            data        : param.data || '',
+            xhrFields   : {
+                withCredentials : true,
+            },
             success  : function(res){
                 //请求成功，且服务器返回code为0
                 if (0 === res.code){
@@ -58,6 +62,19 @@ var _common_util = {
         var template = Hogan.compile(htmlTemplate);
         var result = template.render(data);
         return result;
+    },
+    //字段校验，支持字符串非空校验(require),手机格式,邮箱格式
+    validate : function(value , type){
+        var value = $.trim(value);
+        if('require' === type){
+            return !!value;
+        }
+        if('phone' === type){
+            return /^1\d{10}$/.test(value);
+        }
+        if('email' === type){
+            return /^\w+([-+.]\w+)*@\w+([-.]\ w+)*\.\w+([-.]\w+)*$/.test(value);
+        }
     }
 };
 

@@ -4,10 +4,21 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+var getHtmlPluginConfig = function(name){
+    return {
+        template : './src/view/' + name + '.html',
+        filename : 'view/' + name + '.html',
+        inject   : true,
+        hash     : true,
+        chunks   : ['common' , name],
+    };
+}
+
 const config = {
     entry: {
         'index'     : './src/page/index/index.js',
         'user-login': './src/page/user-login/index.js',
+        'user-register': './src/page/user-register/index.js',
     },
     output: {
         filename: 'js/[name].js',
@@ -38,14 +49,9 @@ const config = {
     plugins: [
         new MiniCssExtractPlugin({filename: 'css/[name].css'}),
 
-        new HtmlWebpackPlugin({
-            template : './src/view/index.html',
-            filename : 'view/index.html',
-            inject   : true,
-            hash     : true,
-            chunks   : ['common' , 'index'],
-        }),
-    
+        new HtmlWebpackPlugin(getHtmlPluginConfig('index')),
+        new HtmlWebpackPlugin(getHtmlPluginConfig('user-login')),
+        new HtmlWebpackPlugin(getHtmlPluginConfig('user-register')),
     ],
     optimization : {
         //提取公共模块

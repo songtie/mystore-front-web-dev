@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require('./common/common-head.htm') %>
+    <title>MyStore商城——用户登录</title>
+</head>
+<body>
+    <%= require('./common/nav-top-simple.htm') %>
+    
+    <div class="page-wrap w">
+        <div class="user-content">
+            <div class="user-title">用户登录</div>
+            <div class="user-form">
+                <div class="user-form-error">
+                    <i class="fa fa-exclamation-circle error-icon"></i>
+                    <p class="error-message">错误信息</p>
+                </div>
+
+                <div class="user-form-item">
+                    <label for="username" class="user-form-label">
+                        <i class="fa fa-user"></i>
+                    </label>
+                    <input type="text" class="user-form-input" id="username" placeholder="请输入用户名" autocomplete="off">
+                </div>
+                <div class="user-form-item">
+                    <label for="password" class="user-form-label">
+                        <i class="fa fa-lock"></i>
+                    </label>
+                    <input type="password" class="user-form-input" id="password" placeholder="请输入密码" autocomplete="off">
+                </div>
+                <a class="btn btn-login" id="submit">登录</a>
+                <div class="user-form-link">
+                    <a href="#" class="link">忘记密码</a>
+                    <a href="#" class="link">免费注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <%= require('./common/common-footer.htm') %>
+</body>
+</html>
