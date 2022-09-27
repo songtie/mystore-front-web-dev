@@ -1,0 +1,25 @@
+<div class="user-info">
+    <div class="form-item">
+        <span class="label">用户名:</span>
+        <span class="text">{{username}}</span>
+    </div>
+    <div class="form-item">
+        <span class="label">电话:</span>
+        <span class="text">{{phone}}</span>
+    </div>
+    <div class="form-item">
+        <span class="label">邮箱:</span>
+        <span class="text">{{email}}</span>
+    </div>
+    <div class="form-item">
+        <span class="label">密码问题:</span>
+        <span class="text">{{question}}</span>
+    </div>
+    <div class="form-item">
+        <span class="label">密码答案:</span>
+        <span class="text">{{answer}}</span>
+    </div>
+    <div class="form-item">
+        <a href="./user-update.html"  class="btn">编辑</a>
+    </div>
+</div>

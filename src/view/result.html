@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require('./common/common-head.htm') %>
+    <title>MyStore商城——结果页</title>
+</head>
+<body>
+    <%= require('./common/nav-top-simple.htm') %>
+    
+    <div class="page-wrap w">
+        <div class="result-content register-success">
+            <h1 class="result-title">恭喜您，注册成功！</h1>
+            <div class="result-item">
+                <a href="./index.html" class="link">回到首页</a>
+                <a href="./user-login.html" class="link">立即登录</a>
+            </div>
+        </div>
+
+        <div class="result-content resetPassword-success">
+            <h1 class="result-title">恭喜您，重置密码成功！</h1>
+            <div class="result-item">
+                <a href="./index.html" class="link">回到首页</a>
+                <a href="./user-login.html" class="link">立即登录</a>
+            </div>
+        </div>
+
+        <div class="result-content default-success">
+            <h1 class="result-title">恭喜您，操作成功！</h1>
+            <div class="result-item">
+                <a href="./index.html" class="link">回到首页</a>
+            </div>
+        </div>
+    </div>
+    
+    <%= require('./common/common-footer.htm') %>
+</body>
+</html>

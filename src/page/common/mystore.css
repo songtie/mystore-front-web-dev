@@ -30,6 +30,24 @@ input[type='checkbox']{
    overflow: hidden;
 }
 
+/* 侧边导航的右侧容器panel */
+.panel{
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+.panel .panel-title{
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
+    padding: 10px;
+    overflow: hidden;
+}
+
 /* 全局通用样式 */
 .hide {
     display: none;
@@ -68,3 +86,25 @@ input[type='checkbox']{
     font-size: 12px;
     padding: 0 10px;
 }
+
+/* 面包屑导航 */
+.crumb{
+    height: 50px;
+    line-height: 50px;
+    background: #eee;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-top: 2px solid #215496;
+}
+
+/* 加载动画gif的样式*/
+.loading{
+    margin: 20px auto;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../../images/loading.gif) no-repeat;
+    background-size: 90% 90%;
+}
+

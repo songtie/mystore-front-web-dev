@@ -1,0 +1,22 @@
+.page-wrap {
+    background: #fff;
+    padding: 30px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+.result-content{
+    display: none;
+}
+.result-content .result-title{
+    color: #555;
+}
+
+.result-content .result-item{
+    margin-top: 20px;
+}
+
+.result-content .result-item .link{
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,21 @@
+.form-item{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.form-item .label{
+    display: inline-block;
+    width: 75px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.form-item .input{
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    width: 200px;
+    outline: none;
+    border: 1px solid #bdbdbd;
+}

@@ -9,7 +9,7 @@ var nav_side = {
         name : '',
         navSideList : [
             {name : 'user-center', description:'个人中心',href:'./user-center.html'},
-            {name : 'modify-password', description:'修改密码',href:'./user-password.html'},
+            {name : 'modify-password', description:'修改密码',href:'./user-password-update.html'},
             {name : 'order-list', description:'我的订单',href:'./order-list.html'},
             {name : 'about', description:'关于MyStore',href:'./about.html'}
         ]

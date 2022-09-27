@@ -1,0 +1,12 @@
+.form-item{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.form-item .label{
+    display: inline-block;
+    width: 75px;
+    text-align: right;
+    margin-right: 10px;
+}

@@ -51,6 +51,9 @@ var _common_util = {
     errorTips : function(msg){
         alert(msg || '出错啦~~~');
     },
+    successTips : function(msg){
+        alert(msg || '操作成功～～～');
+    },
     getURLParam : function(name){
         //http://localhost:8080/product/list?keyword=aaa&pageSize=1
         var paramString = window.location.search.substring(1);

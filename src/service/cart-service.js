@@ -7,7 +7,7 @@ var _cart_service = {
     getCartCount : function(resolve,reject){
         _common_util.request({
             url : _common_util.getServerURL('/cart/get_cart_count'),
-            method : 'POST',
+            method : 'GET',
             success : resolve,
             error : reject
         });

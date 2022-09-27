@@ -76,9 +76,9 @@ var user_register = {
             delete formData.repeatPassword;
             //JSON对象和JSON字符串的格式问题
             _user_service.register(formData, function(res){
-
+                window.location.href = './result.html?type=register';
             }, function(errorMsg){
-
+                errorItem.show(errorMsg);
             });
         }else{
             errorItem.show(validateResult.msg);
