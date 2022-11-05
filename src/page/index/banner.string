@@ -1,0 +1,24 @@
+<div class="banner">
+    <ul>
+        <li>
+            <a href="./product-list.html?categoryId=100002">
+                <img src="../../images/banner-4.webp" alt="" class="banner-img">
+            </a>
+        </li>
+        <li>
+            <a href="./product-list.html">
+                <img src="../../images/banner-csu-1.png" alt="" class="banner-img">
+            </a>
+        </li>
+        <li>
+            <a href="./product-list.html">
+                <img src="../../images/banner-csu-2.jpg" alt="" class="banner-img">
+            </a>
+        </li>
+        <li>
+            <a href="./product-list.html">
+                <img src="../../images/banner-csu-3.jpg" alt="" class="banner-img">
+            </a>
+        </li>
+        </ul>
+</div>

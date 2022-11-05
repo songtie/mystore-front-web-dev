@@ -1,0 +1,91 @@
+.keywords-list{
+    float: left;
+    width: 240px;
+    height: 350px;
+    padding: 10px 0;
+    margin-right: 10px;
+    background: #999;
+    color: #fff;
+}
+
+.keywords-list .keywords-item{
+    padding-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+.keywords-list .keywords-item:hover{
+    background: #bbb;
+}
+
+.keywords-list .keywords-item .link{
+    color: #fff;
+    margin-right: 6px;
+}
+
+.keywords-list .keywords-item .link:hover{
+    color: #215496;
+}
+
+.banner-content{
+    width: 830px;
+    height: 370px;
+    float: left;
+    background: #eee;
+}
+
+
+.banner-content .loading{
+    margin-top: 150px;
+}
+
+.banner-content .banner-img{
+    width: 100%;
+    height: 370px;
+}
+
+/*floor */
+.floor-content .floor-title{
+    height: 50px;
+    line-height: 50px;
+    color: #215496;
+    font-weight: normal;
+    font-size: 20px;
+    border-bottom: 1px solid #215496;
+}
+.floor-content .floor-list{
+    margin-right: -20px;
+    overflow: hidden;
+}
+
+.floor-content .floor-list .floor-item{
+    position: relative;
+    width: 200px;
+    height: 220px;
+    margin: 15px 20px 15px 0;
+    float: left;
+    cursor: pointer;
+    background: #fff;
+}
+
+.floor-content .floor-list .floor-item:hover{
+    box-shadow: 1px 1px 7px #ddd;
+}
+
+.floor-content .floor-list .floor-item .floor-item-text{
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.floor-content .floor-list .floor-item .floor-item-img{
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    width: 80%;
+    height: 75%;
+    border: none;
+}

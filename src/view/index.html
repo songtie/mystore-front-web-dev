@@ -5,15 +5,237 @@
     <title>MyStore商城</title>
 </head>
 <body>
-    <!-- <%= require('./common/nav-top-simple.htm') %> -->
+
     <%= require('./common/nav-top.htm') %>
     <%= require('./common/nav-search.htm') %>
     
-    <div class="page-wrap w">
-        <%= require('./common/nav-side.htm') %>
-        <div class="content with-side">
-            test
-            
+    <div class="w">
+        <ul class="keywords-list">
+            <li class="keywords-item">
+                <a href="./product-list.html?categoryId=100002" class="link" target="_blank">数码3C</a>
+                <a href="./product-list.html?categoryId=100011" class="link" target="_blank">电脑</a>
+                <a href="./product-list.html?categoryId=100012" class="link" target="_blank">手机</a>       
+            </li>
+            <li class="keywords-item"> 
+                <a href="./product-list.html?categoryId=100013" class="link" target="_blank">平板电脑</a> 
+                <a href="./product-list.html?categoryId=100014" class="link" target="_blank">数码相机</a>
+                <a href="./product-list.html?categoryId=100015" class="link" target="_blank">数码配件</a>     
+            </li>
+            <li class="keywords-item">
+                <a href="./product-list.html?categoryId=100001" class="link" target="_blank">家用电器</a>
+                <a href="./product-list.html?categoryId=100006" class="link" target="_blank">冰箱</a>
+                <a href="./product-list.html?categoryId=100007" class="link" target="_blank">电视</a>               
+            </li>
+            <li class="keywords-item">
+                <a href="./product-list.html?categoryId=100008" class="link" target="_blank">洗衣机</a>
+                <a href="./product-list.html?categoryId=100009" class="link" target="_blank">空调</a>
+                <a href="./product-list.html?categoryId=100010" class="link" target="_blank">电热水器</a>
+            </li>
+            <li class="keywords-item">
+                <a href="./product-list.html?categoryId=100003" class="link" target="_blank">服装箱包</a>
+                <a href="./product-list.html?categoryId=100016" class="link" target="_blank">女装</a>
+                <a href="./product-list.html?categoryId=100017" class="link" target="_blank">帽子</a>
+            </li>
+            <li class="keywords-item">
+                <a href="./product-list.html?categoryId=100018" class="link" target="_blank">旅行箱</a>
+                <a href="./product-list.html?categoryId=100019" class="link" target="_blank">手提包</a>
+                <a href="./product-list.html?categoryId=100020" class="link" target="_blank">保暖内衣</a>
+            </li>
+            <li class="keywords-item">
+                <a href="./product-list.html?categoryId=100004" class="link" target="_blank">食品生鲜</a>
+                <a href="./product-list.html?categoryId=100021" class="link" target="_blank">零食</a>
+                <a href="./product-list.html?categoryId=100022" class="link" target="_blank">生鲜</a>
+            </li>
+            <li class="keywords-item">
+                <a href="./product-list.html?categoryId=100023" class="link" target="_blank">半成品菜</a>
+                <a href="./product-list.html?categoryId=100024" class="link" target="_blank">速冻食品</a>
+                <a href="./product-list.html?categoryId=100025" class="link" target="_blank">进口食品</a>
+            </li>
+            <li class="keywords-item">
+                <a href="./product-list.html?categoryId=100005" class="link" target="_blank">酒水饮料</a>
+                <a href="./product-list.html?categoryId=100026" class="link" target="_blank">白酒</a>
+                <a href="./product-list.html?categoryId=100027" class="link" target="_blank">红酒</a>
+            </li>
+            <li class="keywords-item">
+                <a href="./product-list.html?categoryId=100028" class="link" target="_blank">饮料</a>
+                <a href="./product-list.html?categoryId=100029" class="link" target="_blank">调制鸡尾酒</a>
+                <a href="./product-list.html?categoryId=100030" class="link" target="_blank">进口洋酒</a>
+            </li>
+        </ul>
+        <div class="banner-content">
+            <div class="loading">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="w">
+        <div class="floor-content">
+            <h1 class="floor-title">手机数码</h1>
+            <ul class="floor-list">
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100012">
+                        <span class="floor-item-text">电脑</span>
+                        <img src="<%= require('../images/floor-1-1.avif') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=">
+                        <span class="floor-item-text">手机</span>
+                        <img src="<%= require('../images/floor-1-2.avif') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=">
+                        <span class="floor-item-text">平板电脑</span>
+                        <img src="<%= require('../images/floor-1-3.avif') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=">
+                        <span class="floor-item-text">数码相机</span>
+                        <img src="<%= require('../images/floor-1-4.png') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=">
+                        <span class="floor-item-text">数码配件</span>
+                        <img src="<%= require('../images/floor-1-5.avif') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+            </ul>
+            <h1 class="floor-title">家用电器</h1>
+            <ul class="floor-list">
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100006">
+                        <span class="floor-item-text">冰箱</span>
+                        <img src="<%= require('../images/floor-2-1.png') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100007">
+                        <span class="floor-item-text">电视</span>
+                        <img src="<%= require('../images/floor-2-2.jpg') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100008">
+                        <span class="floor-item-text">洗衣机</span>
+                        <img src="<%= require('../images/floor-2-3.avif') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100009">
+                        <span class="floor-item-text">空调</span>
+                        <img src="<%= require('../images/floor-2-4.jpg') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100010">
+                        <span class="floor-item-text">电热水器</span>
+                        <img src="<%= require('../images/floor-2-5.jpg') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+            </ul>
+            <h1 class="floor-title">服装箱包</h1>
+            <ul class="floor-list">
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100016">
+                        <span class="floor-item-text">女装</span>
+                        <img src="<%= require('../images/floor-3-1.webp') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100017">
+                        <span class="floor-item-text">帽子</span>
+                        <img src="<%= require('../images/floor-3-2.avif') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100018">
+                        <span class="floor-item-text">旅行箱</span>
+                        <img src="<%= require('../images/floor-3-3.webp') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100009">
+                        <span class="floor-item-text">手提包</span>
+                        <img src="<%= require('../images/floor-3-4.jpg') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100010">
+                        <span class="floor-item-text">保暖内衣</span>
+                        <img src="<%= require('../images/floor-3-5.jpg') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+            </ul>
+            <h1 class="floor-title">食品生鲜</h1>
+            <ul class="floor-list">
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100016">
+                        <span class="floor-item-text">零食</span>
+                        <img src="<%= require('../images/floor-4-1.jpg') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100017">
+                        <span class="floor-item-text">生鲜</span>
+                        <img src="<%= require('../images/floor-4-2.webp') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100018">
+                        <span class="floor-item-text">半成品菜</span>
+                        <img src="<%= require('../images/floor-4-3.webp') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100009">
+                        <span class="floor-item-text">速冻食品</span>
+                        <img src="<%= require('../images/floor-4-4.webp') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100010">
+                        <span class="floor-item-text">进口食品</span>
+                        <img src="<%= require('../images/floor-4-5.jpg') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+            </ul>
+            <h1 class="floor-title">酒水饮料</h1>
+            <ul class="floor-list">
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100016">
+                        <span class="floor-item-text">白酒</span>
+                        <img src="<%= require('../images/floor-5-1.avif') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100017">
+                        <span class="floor-item-text">红酒</span>
+                        <img src="<%= require('../images/floor-5-2.avif') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100018">
+                        <span class="floor-item-text">饮料</span>
+                        <img src="<%= require('../images/floor-5-3.avif') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100009">
+                        <span class="floor-item-text">调制酒</span>
+                        <img src="<%= require('../images/floor-5-4.avif') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+                <li class="floor-item">
+                    <a href="./product-list?categoryId=100010">
+                        <span class="floor-item-text">进口洋酒</span>
+                        <img src="<%= require('../images/floor-5-5.jpg') %>" alt="" class="floor-item-img" />
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
     
