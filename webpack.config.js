@@ -18,13 +18,14 @@ var getHtmlPluginConfig = function (name) {
 module.exports = {
     entry: {
         'index'                 : './src/page/index/index.js',
+        'product-list'          : './src/page/product-list/index.js',
         'user-login'            : './src/page/user-login/index.js',
         'user-register'         : './src/page/user-register/index.js',
         'result'                : './src/page/result/index.js',
         'user-center'           : './src/page/user-center/index.js',
         'user-update'           : './src/page/user-update/index.js',
         'user-password-reset'   : './src/page/user-password-reset/index.js',
-        'user-password-update'   : './src/page/user-password-update/index.js',
+        'user-password-update'  : './src/page/user-password-update/index.js',
         //'common'    : './src/page/common/index.js',
     },
     output: {
@@ -58,6 +59,8 @@ module.exports = {
         new MiniCssExtractPlugin({ filename: 'css/[name].css' }),
 
         new HtmlWebpackPlugin(getHtmlPluginConfig('index')),
+
+        new HtmlWebpackPlugin(getHtmlPluginConfig('product-list')),
 
         new HtmlWebpackPlugin(getHtmlPluginConfig('user-login')),
 
@@ -102,4 +105,5 @@ module.exports = {
         static: './dist',
     },
     mode: "development",
+    devtool: 'source-map',
 };

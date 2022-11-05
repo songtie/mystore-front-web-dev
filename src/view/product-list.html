@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require('./common/common-head.htm') %>
+    <title>MyStore商城</title>
+</head>
+<body>
+
+    <%= require('./common/nav-top.htm') %>
+    <%= require('./common/nav-search.htm') %>
+
+    <div class="crumb">
+        <div class="w">
+            <div class="crumb-content">
+                <a href="./index.html" class="link">MyStore</a>
+                <span>></span>
+                <span class="link-text">商品列表</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-wrap w">
+        <ul class="sort-content">
+            <li class="sort-item active" data-type="default">默认排序</li>
+            <li class="sort-item" data-type="price">
+                <span>价格</span>
+                <i class="fa fa-sort-asc"></i>
+                <i class="fa fa-sort-desc"></i>
+            </li>
+        </ul>
+
+        <ul class="product-list-content">
+            <div class="loading"></div>
+            <!-- <li class="product-item">
+                <div class="product-img-content">
+                    <a href="" class="link" target="_blank">
+                        <img src="https://tie-demo.oss-cn-hangzhou.aliyuncs.com/mystore-dev/Mate50pro-1.avif" alt="" class="product-img">
+                    </a>
+                </div>
+                <div class="product-price-content">
+                    <span class="product-price">¥20.00</span>
+                </div>
+                <div class="product-name-content">
+                    <a href="" class="product-name" target="_blank">华为Mate50 Pro手机</a>
+                </div>
+            </li> -->
+        </ul>
+        
+        <div class="pagination">
+
+        </div>
+    </div>
+    
+    <%= require('./common/common-footer.htm') %>
+</body>
+</html>
