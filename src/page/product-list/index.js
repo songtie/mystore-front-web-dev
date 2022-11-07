@@ -1,11 +1,14 @@
 require('./index.css');
 require('page/common/nav-top/index.js');
 require('page/common/nav-search/index.js');
+var Pagination = require('utils/pagination/index.js');
 
 var _common_util = require('utils/util.js');
 var _product_service = require('service/product-service.js');
 
 var productListTemplate = require('./index.string');
+
+
 
 var product_list = {
     requestParam : {
@@ -53,12 +56,29 @@ var product_list = {
         var requestParam = this.requestParam;
         var productListHTML = '';
 
+        requestParam.categoryId ? (delete requestParam.keyword) : (delete requestParam.categoryId);
+
+        var _this = this;
         _product_service.getProductList(requestParam, function(res){
             productListHTML = _common_util.renderHTML(productListTemplate, {list : res.records});
             //console.log(productListHTML);
             $('.product-list-content').html(productListHTML);
+            _this.loadPagination(res.current, res.pages);
         }, function(errorMsg){
-
+            
+        });
+    },
+    loadPagination : function(current, pages){
+        var _this = this;
+        this.pagination ? '' : (this.pagination = new Pagination());
+        this.pagination.render({
+            container   : $('.pagination'),
+            current     : current,
+            pages       : pages,
+            onClickItem : function(current){
+                _this.requestParam.pageNum = current;
+                _this.loadProductList();
+            }
         });
     }
 };

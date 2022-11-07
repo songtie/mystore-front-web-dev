@@ -2,7 +2,7 @@
 {{#list}}
 <li class="product-item">
     <div class="product-img-content">
-        <a href="" class="link" target="_blank">
+        <a href="./product-detail.html?productId={{id}}" class="link" target="_blank">
             <img src="{{imageServer}}{{mainImage}}" alt="" class="product-img">
         </a>
     </div>

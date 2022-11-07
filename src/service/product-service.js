@@ -13,6 +13,17 @@ var _product_service = {
             error : reject
         });
     },
+
+    //获取商品详情
+    getProductDetail : function(requestParam, resolve,reject){
+        _common_util.request({
+            url     : _common_util.getServerURL('/product/detail'),
+            method  : 'GET',
+            data    : requestParam,
+            success : resolve,
+            error : reject
+        });
+    },
 };
 
 module.exports = _product_service;

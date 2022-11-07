@@ -19,6 +19,7 @@ module.exports = {
     entry: {
         'index'                 : './src/page/index/index.js',
         'product-list'          : './src/page/product-list/index.js',
+        'product-detail'        : './src/page/product-detail/index.js',
         'user-login'            : './src/page/user-login/index.js',
         'user-register'         : './src/page/user-register/index.js',
         'result'                : './src/page/result/index.js',
@@ -61,6 +62,9 @@ module.exports = {
         new HtmlWebpackPlugin(getHtmlPluginConfig('index')),
 
         new HtmlWebpackPlugin(getHtmlPluginConfig('product-list')),
+
+        new HtmlWebpackPlugin(getHtmlPluginConfig('product-detail')),
+
 
         new HtmlWebpackPlugin(getHtmlPluginConfig('user-login')),
 

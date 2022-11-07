@@ -1,0 +1,16 @@
+<div class="page-content">
+    {{#pageArray}}
+        {{#disabled}}
+            <span class="page-item disabled" data-value="{{value}}">{{name}}</span>
+        {{/disabled}}
+        {{^disabled}}
+            {{#active}}
+                <span class="page-item active" data-value="{{value}}">{{name}}</span>
+            {{/active}}
+            {{^active}}
+                <span class="page-item" data-value="{{value}}">{{name}}</span>
+            {{/active}}
+        {{/disabled}}
+    {{/pageArray}}
+    <span class="page-total">{{current}}/{{pages}}</span>
+</div>
