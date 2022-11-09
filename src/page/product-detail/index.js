@@ -1,5 +1,6 @@
 require('./index.css');
-
+require('page/common/nav-top/index.js');
+require('page/common/nav-search/index.js');
 var _common_util = require('utils/util.js');
 var _product_service = require('service/product-service.js');
 var _cart_service = require('service/cart-service.js');

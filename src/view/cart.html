@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require('./common/common-head.htm') %>
+    <title>MyStore商城</title>
+</head>
+<body>
+
+    <%= require('./common/nav-top.htm') %>
+    <%= require('./common/nav-search.htm') %>
+
+    <div class="crumb">
+        <div class="w">
+            <div class="crumb-content">
+                <a href="./index.html" class="link">MyStore</a>
+                <span>></span>
+                <span class="link-text">购物车</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-wrap w">
+        <div class="cart-header">
+            <table class="cart-table">
+                <tr>
+                    <th class="cart-cell cell-check">
+                        <label class="cart-label">
+                            <input type="checkbox" class="cart-select-all">
+                            <span>全选</span>
+                        </label>
+                    </th>
+                    <th class="cart-cell cell-info">商品信息</th>
+                    <th class="cart-cell cell-price">单价</th>
+                    <th class="cart-cell cell-count">数量</th>
+                    <th class="cart-cell cell-total">合计</th>
+                    <th class="cart-cell cell-operate">操作</th>
+                </tr>
+            </table>
+        </div>
+        <div class="cart-list">
+            <table class="cart-table">
+                <tr>
+                    <td class="cart-cell cell-check">
+                        <label class="cart-label">
+                            <input type="checkbox" class="cart-select">
+                        </label>
+                    </td>
+                    <td class="cart-cell cell-img">
+                        <img src="https://tie-demo.oss-cn-hangzhou.aliyuncs.com/mystore-dev/iphone14-1.avif" alt="" class="p-img"/> 
+                    </td>
+                    <td class="cart-cell cell-info">
+                        <a href="" class="link">XXX</a>
+                    </td>
+                    <td class="cart-cell cell-price">¥123</td>
+                    <td class="cart-cell cell-count">
+                        <span class="count-btn minus">-</span>
+                        <input type="text" class="count-input" value="10">
+                        <span class="count-btn add">+</span>
+                    </td>
+                    <td class="cart-cell cell-total">¥123</td>
+                    <td class="cart-cell cell-operate">
+                        <span class="link cart-delete" >删除</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="cart-footer">
+            <div class="select-content">
+                <label class="cart-label">
+                    <input type="checkbox" class="cart-select-all">
+                    <span>全选</span>
+                </label>
+            </div>
+            <div class="delete-content">
+                <span class="link cart-delete-selected">
+                    <i class="fa fa-trash-o"></i>
+                    <span>删除选中</span>
+                </span>          
+            </div>
+            <div class="submit-content">
+                <span>总价:</span>
+                <span class="submit-total">¥123</span>
+                <span class="btn submit-btn">去结算</span>
+            </div>
+        </div>
+        
+    </div>
+    
+    <%= require('./common/common-footer.htm') %>
+    
+</body>
+</html>

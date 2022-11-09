@@ -1,0 +1,96 @@
+{{#isNotEmpty}}
+    <div class="cart-header">
+        <table class="cart-table">
+            <tr>
+                <th class="cart-cell cell-check">
+                    <label class="cart-label">
+                        {{#cart.allSelected}}
+                            <input type="checkbox" class="cart-select-all" checked>
+                            <span>全选</span>
+                        {{/cart.allSelected}}
+                        {{^cart.allSelected}}
+                            <input type="checkbox" class="cart-select-all">
+                            <span>全选</span>
+                        {{/cart.allSelected}}
+                    </label>
+                </th>
+                <th class="cart-cell cell-info">商品信息</th>
+                <th class="cart-cell cell-price">单价</th>
+                <th class="cart-cell cell-count">数量</th>
+                <th class="cart-cell cell-total">合计</th>
+                <th class="cart-cell cell-operate">操作</th>
+            </tr>
+        </table>
+    </div>
+    <div class="cart-list">
+        {{#cart.cartItemVOList}}
+        <table class="cart-table" data-product-id="{{productId}}">
+            <tr>
+                <td class="cart-cell cell-check">
+                    <label class="cart-label">
+                        {{#checked}}
+                            <input type="checkbox" class="cart-select" checked>
+                        {{/checked}}
+                        {{^checked}}
+                            <input type="checkbox" class="cart-select">
+                        {{/checked}}
+                    </label>
+                </td>
+                <td class="cart-cell cell-img">
+                    <img src="{{cart.productImageServer}}{{productMainImage}}" alt="" class="p-img"/> 
+                </td>
+                <td class="cart-cell cell-info">
+                    <a href="" class="link">{{productName}}</a>
+                </td>
+                <td class="cart-cell cell-price">¥{{productPrice}}</td>
+                <td class="cart-cell cell-count">
+                    <span class="count-btn minus">-</span>
+                    <input type="text" class="count-input" value="{{quantity}}" data-stock="{{productStock}}" readonly>
+                    <span class="count-btn add">+</span>
+                </td>
+                <td class="cart-cell cell-total">¥{{cartItemTotalPrice}}</td>
+                <td class="cart-cell cell-operate">
+                    <span class="link cart-delete" >删除</span>
+                </td>
+            </tr>
+        </table>
+        {{/cart.cartItemVOList}}
+        
+    </div>
+
+    <div class="cart-footer">
+        <div class="select-content">
+            <label class="cart-label">
+                {{#cart.allSelected}}
+                    <input type="checkbox" class="cart-select-all" checked>
+                    <span>全选</span>
+                {{/cart.allSelected}}
+                {{^cart.allSelected}}
+                    <input type="checkbox" class="cart-select-all">
+                    <span>全选</span>
+                {{/cart.allSelected}}
+            </label>
+        </div>
+        <div class="delete-content">
+            <span class="link cart-delete-selected">
+                <i class="fa fa-trash-o"></i>
+                <span>删除选中</span>
+            </span>          
+        </div>
+        <div class="submit-content">
+            <span>总价:</span>
+            <span class="submit-total">¥{{cart.cartTotalPrice}}</span>
+            <span class="btn submit-btn">去结算</span>
+        </div>
+</div>
+{{/isNotEmpty}}
+
+{{^isNotEmpty}}
+    <p class="error-tip">
+        <span>您的购物车中没有商品，</span>
+        <a href="./index.html">立即去选购！</a>
+    </p>
+{{/isNotEmpty}}
+
+
+
